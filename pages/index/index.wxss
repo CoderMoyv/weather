@@ -1,0 +1,14 @@
+.header-modular{
+  height: 400rpx;
+  background-color: #64C8FA;
+  position: relative;
+}
+.header-modular .bg-wave{
+  width: 100vw;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 120rpx;
+  mix-blend-mode: screen;
+}

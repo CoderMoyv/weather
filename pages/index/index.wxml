@@ -1,0 +1,4 @@
+<!--https://codermoyv.gitee.io/coder-moyv/assets/images/wechat/bg_wave.gif-->
+<view class="header-modular">
+  <image class="bg-wave" src="https://codermoyv.gitee.io/coder-moyv/assets/images/wechat/bg_wave.gif"></image>
+</view>
