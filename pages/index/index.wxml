@@ -1,4 +1,20 @@
 <!--https://codermoyv.gitee.io/coder-moyv/assets/images/wechat/bg_wave.gif-->
-<view class="header-modular">
+<view class="header-modular" wx:if="{{now}}">
   <image class="bg-wave" src="https://codermoyv.gitee.io/coder-moyv/assets/images/wechat/bg_wave.gif"></image>
+  <view class="row">
+    <view class="row location-wrap">
+      <image class="icon" src="/images/icon_location.png"></image>
+      <view class="title">{{City}} {{County}}</view>
+    </view>
+    
+  </view>
+  <view class="row">
+    <view class="tmp">{{now.temp}}°</view>
+    <image class="icon-weather"  src="https://moyv.top/wechat/images/weather/{{now.icon}}.png"></image>
+  </view>
+  <view class="tips-wrap">
+    <view class="tips ">{{now.windDir}} {{now.windScale}}级</view>
+    <view class="tips ">湿度 {{now.humidity}}%</view>
+    <view class="tips ">气压 {{now.pressure}}Pa</view>
+  </view>
 </view>

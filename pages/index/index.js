@@ -55,7 +55,7 @@ Page({
                     that.getWeather()
                     that.getCityByLoaction()
                   }
-                },fail(err){
+                }, fail(err) {
                   console.log(err)
                   wx.showToast({
                     title: '唤起设置页失败，请手动打开',
@@ -116,6 +116,9 @@ Page({
       success(result) {
         var res = result.data
         console.log(res)
+        that.setData({
+          now: res.now
+        })
       }
     })
   },

@@ -1,7 +1,15 @@
+/* 工具类 */
+.row{
+  display: flex;
+  align-items: center;
+}
+/* 页面样式 */
 .header-modular{
   height: 400rpx;
   background-color: #64C8FA;
+  background: linear-gradient(to bottom , #56CCF2,#2F80ED);
   position: relative;
+  padding: 30rpx;
 }
 .header-modular .bg-wave{
   width: 100vw;
@@ -11,4 +19,34 @@
   right: 0;
   height: 120rpx;
   mix-blend-mode: screen;
+}
+.header-modular .location-wrap{
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 36rpx;
+}
+.header-modular .location-wrap .icon{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 8rpx;
+}
+.header-modular .tmp{
+  font-size: 200rpx;
+  /* font-weight: bold; */
+  color: #ffffff;
+  margin-right: auto;
+}
+.header-modular .icon-weather{
+  width: 200rpx;
+  height: 200rpx;
+}
+.header-modular .tips-wrap{
+  display: flex;
+  justify-content: space-between;
+}
+.header-modular .tips{
+  font-size: 28rpx;
+  opacity: 0.8;
+  color: #ffffff;
+  flex: 1;
 }
